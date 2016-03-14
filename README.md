@@ -3,7 +3,7 @@
 ### This projects helps one understand the basic working of *servlets*, *sessions*, *lifecycle of servlets* and how *request*, *session* and *servlet context* scopes can be used to share data.  
 The hyperlinks in the index.html(http://{IP_ADDR}:8080/ServletSample/) are self explanatory
 
- *Note: Check console after each operation to understand the flow and also go through the code and comments in the code for better understanding.* 
+ *Note: Check console after each operation to understand the flow and also go through the code and comments in the code for better understanding. In Servlets, we write html code inside java code* 
 
 ###### Operations
 
