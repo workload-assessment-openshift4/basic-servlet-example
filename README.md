@@ -27,4 +27,6 @@ The hyperlinks in the index.html(http://{IP_ADDR}:8080/ServletSample/) are self 
 *Note: Since servlet is a singleton, from 2nd request first 3 steps will not be performed. From 2nd request service() method is invoked in a new thread of execution.*
  
 ###### Session is one per client(browser) across n requests
-###### Servlet Context is one per web application
+###### Servlet Context is one per web application  
+
+*Note: This project needs to be refactored to use best practices which will be done later. As of now this code should be used only for understanding purposes.*
