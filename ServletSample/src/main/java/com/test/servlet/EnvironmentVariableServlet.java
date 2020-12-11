@@ -30,6 +30,7 @@ public class EnvironmentVariableServlet extends HttpServlet {
         System.out.println("Username and email id is retrived from the session");
         HttpSession session = request.getSession(false);
         PrintWriter out = response.getWriter();
-        out.write("<html><body><h1>This is the environment stuff.</h1></body></html>");
+        String testEnv = System.getenv("TEST_ENV");
+        out.write("<html><body><h1>This is the environment variable: " + testEnv + "</h1></body></html>");
     }
 }
