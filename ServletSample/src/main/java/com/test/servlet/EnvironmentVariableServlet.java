@@ -33,14 +33,15 @@ public class EnvironmentVariableServlet extends HttpServlet {
         String testEnv = System.getenv("TEST_ENV");
         out.write("<html><body><h1>This is the environment variable: " + testEnv + "</h1></body></html>");
 
-        String catalinaConfigDirectory = System.getenv("CATALINA_HOME") + "/conf/";
-        File catalinaProperties = new File(catalinaConfigDirectory,"catalina.properties");
-        InputStream stream = new FileInputStream(catalinaProperties);
-        Properties props = new Properties();
-        props.load(stream);
+//        String catalinaConfigDirectory = System.getenv("CATALINA_HOME") + "/conf/";
+//        File catalinaProperties = new File(catalinaConfigDirectory,"catalina.properties");
+//        InputStream stream = new FileInputStream(catalinaProperties);
+//        Properties props = new Properties();
+//        props.load(stream);
 
         //This can be any key-value pair in the properties file
-        String catProp = props.getProperty("common.loader");
+//        String catProp = props.getProperty("common.loader");
+        String catProp = System.getProperty("test.property","not found");
         out.write("<html><body><h1>This is a property from catalina.properties: " + catProp + "</h1></body></html>");
 
 
